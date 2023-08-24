@@ -1,11 +1,17 @@
-   stage ('List folder'){
+pipeline {
+    agent any 
+    stages {
+        stage('Stage 1') {
+            steps {
+                echo 'Hello world!' 
+            }
+        }
+       stage ('List folder'){
           sh """
              ls -al
              ls -l
           """
     }
-
-    stage('Stage 2') {
-        echo 'Hello world! -from gitlab omar-lab main branch' 
-        }
+       
+    }
 }
