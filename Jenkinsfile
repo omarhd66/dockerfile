@@ -6,12 +6,5 @@ pipeline {
                 echo 'Hello world!' 
             }
         }
-       stage ('List folder'){
-          sh """
-             ls -al
-             ls -l
-          """
-    }
-       
     }
 }
