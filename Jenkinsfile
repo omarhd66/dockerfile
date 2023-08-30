@@ -7,10 +7,7 @@ pipeline {
             }
            
     }
-    stage('push') {
-            steps {
-                sh 'ls -l'
-            }
-           
     }
 }
+
+
